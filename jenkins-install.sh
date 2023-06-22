@@ -4,8 +4,7 @@
 sudo timedatectl set-timezone Nigeria/Lagos
 sudo hostnamectl set-hostname jenkins
 sudo yum install wget -y
-sudo wget -0 /etc/yum.repos.d/jenkins.repo \
-https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 sudo yum upgrade -y
 # Add additional dependencies for the Jenkins package
